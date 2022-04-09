@@ -11,13 +11,13 @@ int main()
 
     std::string input;
     finput >> input;
-    for (int i = 0; i < static_cast<int>(input.length()); i++)
+    for (char c : input)
     {
-        if (input[i] == '(')
+        if (c == '(')
         {
             num_open++;
         }
-        else if (input[i] == ')')
+        else if (c == ')')
         {
             num_closed++;
         }

@@ -26,9 +26,9 @@ int * parse(string line)
      * otherwise
      * move on to the next string
      */
-    for (int i = 0; i < static_cast<int>(line.length()); i++)
+    for (char c : line)
     {
-        if (line[i] == 'x')
+        if (c == 'x')
         {
 
             // convert current_num to an int and store it in ret
@@ -41,8 +41,8 @@ int * parse(string line)
         }
 
         current_num.append(
-            // fill constructor: 1 copy of the char line[i]
-            string(1, line[i])
+            // fill constructor: 1 copy of the char c
+            string(1, c)
             );
     }
 
