@@ -7,8 +7,6 @@ using namespace std;
 array<char, 5> VOWELS = {'a', 'e', 'i', 'o', 'u'};
 array<string, 4> BAD_STRINGS = {"ab", "cd", "pq", "xy"};
 
-// 27 is not correct
-
 enum Status
 {
     nice,
